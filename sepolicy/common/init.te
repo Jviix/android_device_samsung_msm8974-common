@@ -45,6 +45,7 @@ allow init {
     sysfs_usb_otg
     sysfs_usb_storage_gadget
     sysfs_wifi_writeable
+    proc
 }:file setattr;
 
 allow init {
