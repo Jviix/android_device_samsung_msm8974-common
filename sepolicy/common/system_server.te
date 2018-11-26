@@ -8,7 +8,7 @@ allow system_server qmuxd:unix_stream_socket connectto;
 allow system_server qmuxd_socket:dir w_dir_perms;
 allow system_server qmuxd_socket:sock_file { create setattr write };
 allow system_server sysfs_mdnie:file rw_file_perms;
-allow system_server proc:file getattr;
+allow system_server proc:file { getattr read };
 
 allow system_server {
     efs_file
